@@ -1,0 +1,15 @@
+service: disneyplusapi
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+useDotenv: true
+
+functions:
+  - ${file(./api/movies/functions.yml):functions}
+
+plugins:
+  - serverless-offline
+  - serverless-dotenv-plugin

@@ -1,0 +1,17 @@
+{
+  "name": "disneyplusapi",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "joi": "^17.6.0",
+    "mongodb": "^4.7.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1",
+    "serverless-dotenv-plugin": "^4.0.1",
+    "serverless-offline": "^8.8.0"
+  }
+}

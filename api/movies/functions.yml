@@ -1,0 +1,31 @@
+functions:
+  createMovie:
+    handler: ./api/movies/controllers/create.handler
+    events:
+      - httpApi:
+          path: /movies
+          method: POST
+  findMovies:
+    handler: ./api/movies/controllers/find.handler
+    events:
+      - httpApi:
+          path: /movies
+          method: GET
+  findMovie:
+    handler: ./api/movies/controllers/findOne.handler
+    events:
+      - httpApi:
+          path: /movies/{id}
+          method: GET
+  updateMovie:
+    handler: ./api/movies/controllers/update.handler
+    events:
+      - httpApi:
+          path: /movies/{id}
+          method: PUT
+  deleteMovie:
+    handler: ./api/movies/controllers/delete.handler
+    events:
+      - httpApi:
+          path: /movies/{id}
+          method: DELETE
